@@ -1,9 +1,7 @@
-openmetadata
 #支持私库
-docker.getcollate.io/openmetadata/postgresql:1.6.5
-docker.elastic.co/elasticsearch/elasticsearch:8.11.4
-docker.getcollate.io/openmetadata/server:1.6.5
-docker.getcollate.io/openmetadata/server:1.6.5
-docker.getcollate.io/openmetadata/ingestion:1.6.5
+
+--platform=linux/arm64 docker.elastic.co/elasticsearch/elasticsearch:8.11.4
+--platform=linux/arm64 docker.getcollate.io/openmetadata/server:1.6.5
+--platform=linux/arm64 docker.getcollate.io/openmetadata/ingestion:1.6.5
 #支持指定架构
---platform=linux/arm64
+--platform=linux/arm64  docker.getcollate.io/openmetadata/postgresql:1.6.5
